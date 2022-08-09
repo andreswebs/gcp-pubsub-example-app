@@ -46,13 +46,13 @@ function configureSignals() {
 }
 
 async function listenForMessages() {
+  configureSignals();
+
   let messageCount = 0;
 
   if (pollTimeoutSeconds > 0) {
     startJobTimer();
   }
-
-  configureSignals();
 
   const messageHandler = (message: Message) => {
     messageCount += 1;
