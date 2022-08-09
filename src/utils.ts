@@ -48,7 +48,9 @@ function configureSignals() {
 async function listenForMessages() {
   let messageCount = 0;
 
-  startJobTimer();
+  if (pollTimeoutSeconds > 0) {
+    startJobTimer();
+  }
 
   configureSignals();
 
