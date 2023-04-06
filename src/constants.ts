@@ -13,7 +13,7 @@ const pollNotificationPeriodSeconds = process.env
 
 const pollTimeoutSeconds = process.env.POLL_TIMEOUT_SECONDS
   ? parseInt(process.env.POLL_TIMEOUT_SECONDS, 10)
-  : 3000;
+  : 0;
 
 export {
   signals,

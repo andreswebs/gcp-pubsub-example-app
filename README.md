@@ -1,4 +1,4 @@
-# GCP pub/sub listener example
+# GCP Pub/Sub listener example
 
 An example NodeJS application that listens for messages on a GCP Pub/Sub
 (pull) subscription.
